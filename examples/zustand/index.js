@@ -5,7 +5,7 @@ import Grid, {
   useEditable,
   useSelection,
   useSizer as useAutoSizer,
-} from "@rowsncolumns/grid";
+} from "@swordlib/grid";
 import create from "zustand";
 
 const [dataStore] = create((set, get) => {

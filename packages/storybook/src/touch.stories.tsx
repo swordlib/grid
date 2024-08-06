@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Grid, { Cell, useSelection, useTouch } from "@rowsncolumns/grid";
+import Grid, { Cell, useSelection, useTouch } from "@swordlib/grid";
 
 export default {
   title: "Mobile (touch)",

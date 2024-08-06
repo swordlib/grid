@@ -12,7 +12,7 @@ import Grid, {
   SelectionArea,
   GridRef,
   useCopyPaste,
-} from "@rowsncolumns/grid";
+} from "@swordlib/grid";
 
 export default {
   title: "Copy Paste",

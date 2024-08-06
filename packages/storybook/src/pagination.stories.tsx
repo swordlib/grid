@@ -4,7 +4,7 @@ import Grid, {
   GridRef,
   useSelection,
   usePagination,
-} from "@rowsncolumns/grid";
+} from "@swordlib/grid";
 
 export default {
   title: "Pagination",

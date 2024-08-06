@@ -4,7 +4,7 @@ import Grid, {
   GridRef,
   useSelection,
   AreaProps,
-} from "@rowsncolumns/grid";
+} from "@swordlib/grid";
 import { Group, Rect, Text } from "react-konva";
 import { useTable } from "react-table";
 import makeData from "./makeData";

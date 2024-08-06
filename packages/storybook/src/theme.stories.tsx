@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useRef } from "react";
-import Grid, { Cell } from "@rowsncolumns/grid";
+import Grid, { Cell } from "@swordlib/grid";
 
 export default {
   title: "Themes",

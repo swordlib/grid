@@ -44,12 +44,12 @@ Born out of frustration, having to deal with complicated imperative canvas libra
 
 #### npm
 ```
-npm install @rowsncolumns/grid --save
+npm install @swordlib/grid --save
 ```
 #### yarn
 
 ```
-yarn add @rowsncolumns/grid
+yarn add @swordlib/grid
 ```
 
 ## Compatiblity
@@ -79,7 +79,7 @@ Uses [react-table](https://github.com/tannerlinsley/react-table) to create group
 ## Usage
 
 ```js
-import { Grid, Cell } from '@rowsncolumns/grid'
+import { Grid, Cell } from '@swordlib/grid'
 import { Group, Text, Rect } from 'react-konva'
 
 const App = () => {

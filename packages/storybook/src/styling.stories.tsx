@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Grid, { Cell, GridRef, useSelection } from "@rowsncolumns/grid";
+import Grid, { Cell, GridRef, useSelection } from "@swordlib/grid";
 
 export default {
   title: "Styling",

@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, { useRef, useState, useCallback } from "react";
-import Grid, { IChildrenProps, Cell, useSelection } from "@rowsncolumns/grid";
+import Grid, { IChildrenProps, Cell, useSelection } from "@swordlib/grid";
 import { Rect, Text, Group, RegularPolygon } from "react-konva";
 
 export default {

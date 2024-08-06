@@ -16,7 +16,7 @@ import Grid, {
   Direction,
   SelectionProps,
   Selection,
-} from "@rowsncolumns/grid";
+} from "@swordlib/grid";
 import { useMeasure } from "react-use";
 import { Rect, Text, Group, RegularPolygon } from "react-konva";
 

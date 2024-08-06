@@ -6,7 +6,7 @@ import Grid, {
   GridRef,
   useTooltip,
   DefaultTooltipProps,
-} from "@rowsncolumns/grid";
+} from "@swordlib/grid";
 
 export default {
   title: "Collaboration",

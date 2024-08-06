@@ -7,7 +7,7 @@ import Grid, {
   useEditable,
   useUndo,
   createPatches,
-} from "@rowsncolumns/grid";
+} from "@swordlib/grid";
 
 export default {
   title: "Undo Redo",

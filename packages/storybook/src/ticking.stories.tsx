@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, { memo, useRef, useState, useCallback, useEffect } from "react";
-import Grid, { Cell, CellRenderer, useSelection } from "@rowsncolumns/grid";
+import Grid, { Cell, CellRenderer, useSelection } from "@swordlib/grid";
 
 export default {
   title: "Ticking",

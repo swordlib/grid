@@ -47,6 +47,7 @@ import invariant from "tiny-invariant";
 import type { StageConfig } from "konva/lib/Stage";
 import { Direction } from "./types";
 import Konva from "konva";
+import { isMac } from "./platform";
 
 export interface GridProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, "onScroll" | "children"> {
@@ -1447,12 +1448,14 @@ const Grid: React.FC<GridProps & RefAttribute> = memo(
       /* Scroll natively */
       if (wheelingRef.current) return;
 
-      let dx = isScrollingHorizontally ? deltaY : deltaX;
+      // use deltaY for windows system, deltaX for mac
+      let dx = isScrollingHorizontally ? (isMac ? deltaX : deltaY) : 0;
       let dy = deltaY;
-
+      
       /* Scroll only in one direction */
       const isHorizontal =
         isScrollingHorizontally || Math.abs(dx) > Math.abs(dy);
+        
 
       /* If snaps are active */
       if (snap) {
