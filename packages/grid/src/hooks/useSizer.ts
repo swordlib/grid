@@ -164,6 +164,7 @@ const useAutoSizer = ({
     visibleRowStopIndex: 0,
     visibleColumnStartIndex: 0,
     visibleColumnStopIndex: 0,
+    containerHeight: 0,
   });
   const isMounted = useRef(false);
   const getValueRef = useRef<typeof getValue>();

@@ -1,7 +1,7 @@
 {
   "name": "@swordlib/grid",
   "description": "Declarative React Canvas Grid primitive for Data table, Pivot table, Excel Worksheets",
-  "version": "9.0.5",
+  "version": "9.0.6",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
