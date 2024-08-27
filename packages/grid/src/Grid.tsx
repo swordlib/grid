@@ -355,6 +355,7 @@ export interface ViewPortProps {
   visibleRowStopIndex: number;
   visibleColumnStartIndex: number;
   visibleColumnStopIndex: number;
+  containerHeight: number;
 }
 
 export interface InstanceInterface {
@@ -1195,6 +1196,7 @@ const Grid: React.FC<GridProps & RefAttribute> = memo(
     /* Get current view port of the grid */
     const getViewPort = useCallback((): ViewPortProps => {
       return {
+        containerHeight,
         rowStartIndex,
         rowStopIndex,
         columnStartIndex,
@@ -1213,6 +1215,7 @@ const Grid: React.FC<GridProps & RefAttribute> = memo(
       visibleRowStopIndex,
       visibleColumnStartIndex,
       visibleColumnStopIndex,
+      containerHeight,
     ]);
 
     /**
@@ -1501,6 +1504,7 @@ const Grid: React.FC<GridProps & RefAttribute> = memo(
         visibleRowStopIndex,
         visibleColumnStartIndex,
         visibleColumnStopIndex,
+        containerHeight,
       });
     }, [
       rowStartIndex,
@@ -1511,6 +1515,7 @@ const Grid: React.FC<GridProps & RefAttribute> = memo(
       visibleRowStopIndex,
       visibleColumnStartIndex,
       visibleColumnStopIndex,
+      containerHeight,
     ]);
 
     /* Draw gridlines */
