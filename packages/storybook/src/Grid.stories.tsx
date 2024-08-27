@@ -1010,6 +1010,8 @@ export const GridWithFrozenEdges: React.FC = () => {
     });
     return (
       <Grid
+        showGridLines
+        gridLineColor="red"
         ref={gridRef}
         selection={selection}
         width={width}
