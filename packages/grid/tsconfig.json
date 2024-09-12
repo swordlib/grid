@@ -3,6 +3,6 @@
   "exclude": ["node_modules", "**/*.stories.tsx"],
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
   }
 }

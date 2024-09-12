@@ -12,11 +12,12 @@
     "build": "rimraf dist && tsc -b",
     "build:watch": "tsc -p . --watch",
     "check:types": "tsc --noEmit",
-    "prepublish": "yarn build",
+    "prepublish": "pnpm build",
     "prettier": "prettier src/**/*.{ts,tsx} --write",
-    "test": "jest",
-    "precommit": "yarn test && yarn check:types"
+    "test": "vitest",
+    "precommit": "pnpm test && pnpm check:types"
   },
+
   "publishConfig": {
     "access": "public"
   },

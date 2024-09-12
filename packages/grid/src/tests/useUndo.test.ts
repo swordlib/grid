@@ -1,6 +1,6 @@
 import { renderHook, act } from "@testing-library/react-hooks";
 import useUndo, { PatchInterface } from "./../hooks/useUndo";
-
+import { vi } from "vitest";
 type Patch = any;
 
 describe("useUndo", () => {
@@ -46,8 +46,8 @@ describe("useUndo", () => {
   });
 
   it("calls onundo and onredo", () => {
-    const onUndo = jest.fn();
-    const onRedo = jest.fn();
+    const onUndo = vi.fn();
+    const onRedo = vi.fn();
     const { result } = renderHook(() => useUndo({ onUndo, onRedo }));
     const patch: PatchInterface<Patch> = {
       patches: [{ op: "replace", value: "b", path: ["hello"] }],
