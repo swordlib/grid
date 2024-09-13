@@ -523,7 +523,7 @@ const Grid: React.FC<GridProps & RefAttribute> = memo(
       onViewChange,
       selectionRenderer = defaultSelectionRenderer,
       onBeforeRenderRow,
-      showFrozenShadow = false,
+      showFrozenShadow = true,
       shadowSettings = defaultShadowSettings,
       borderStyles = EMPTY_ARRAY as StylingProps,
       children,
@@ -2452,10 +2452,9 @@ const Grid: React.FC<GridProps & RefAttribute> = memo(
             clipHeight={frozenRowHeight + frozenSpacing}
           >
             <Group offsetY={0} offsetX={scrollLeft}>
-              {/* {gridLinesFrozenRow} */}
               {frozenRowCells}
-              {frozenRowShadowComponent}
               {gridLinesFrozenRow}
+              {frozenRowShadowComponent}
               {frozenRowCellOverlays}
             </Group>
           </Group>
@@ -2466,7 +2465,6 @@ const Grid: React.FC<GridProps & RefAttribute> = memo(
             clipHeight={containerHeight - frozenRowHeight}
           >
             <Group offsetY={scrollTop} offsetX={0}>
-              {/* {gridLinesFrozenColumn} */}
               {frozenColumnCells}
               {gridLinesFrozenColumn}
               {frozenColumnShadowComponent}
@@ -2481,7 +2479,6 @@ const Grid: React.FC<GridProps & RefAttribute> = memo(
             clipWidth={frozenColumnWidth + frozenSpacing}
             clipHeight={frozenRowHeight + frozenSpacing}
           >
-            {/* {gridLinesFrozenIntersection} */}
             {frozenIntersectionCells}
             {gridLinesFrozenIntersection}
             {frozenRowShadowComponent}
